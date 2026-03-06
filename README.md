@@ -1,12 +1,14 @@
-# FCT Blueprints Decoder/Encoder
+# FCT Blueprints Decoder/Encoder <a href="https://github.com/OstinUA"><img align="right" src="https://img.shields.io/badge/OstinUA-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
 
-> Decode, patch, and re-encode Factorio blueprints in a browser-first workflow without spinning up backend infra.
+![Factorio: 2.0+](https://img.shields.io/badge/Factorio-2.0%2B%20%2F%20Space%20Age-orange?style=for-the-badge)
 
-[![Project Type: Web App](https://img.shields.io/badge/Type-Web_App-2b2d42?style=for-the-badge)](#)
-[![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-F7DF1E?style=for-the-badge&logo=javascript&logoColor=111)](#technology-stack)
-[![License: GPL-3.0](https://img.shields.io/badge/License-GPL--3.0-blue?style=for-the-badge)](LICENSE)
-[![UI Stack: HTML/CSS](https://img.shields.io/badge/UI-HTML%20%7C%20CSS-E34F26?style=for-the-badge&logo=html5&logoColor=white)](#technology-stack)
-[![Runtime: Browser](https://img.shields.io/badge/Runtime-Browser-3a86ff?style=for-the-badge)](#getting-started)
+![Platform: Web](https://img.shields.io/badge/Platform-Web_App-0ea5e9?style=for-the-badge)
+[![Frontend: Vanilla JS](https://img.shields.io/badge/Frontend-Vanilla%20JS-F7DF1E?style=for-the-badge&logo=javascript&logoColor=111111)](script.js)
+[![Styles: CSS3](https://img.shields.io/badge/Styles-CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](style.css)
+[![Markup: HTML5](https://img.shields.io/badge/Markup-HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](index.html)
+![Status: Active](https://img.shields.io/badge/Status-Active-22c55e?style=for-the-badge)
+![Coverage: Manual](https://img.shields.io/badge/Coverage-Manual%20Validation-lightgrey?style=for-the-badge)
+[![i18n](https://img.shields.io/badge/i18n-multi--language-2ea44f?style=for-the-badge)](#features)
 
 A production-practical, zero-backend utility for Factorio players who need to inspect blueprint payloads, tweak JSON, update blueprint book metadata, and ship the encoded string back into the game loop fast.
 
@@ -201,3 +203,9 @@ Project created with the support of the FCTostin community.
 
 [![Patreon](https://img.shields.io/badge/Patreon-Support-F96854?style=for-the-badge&logo=patreon&logoColor=white)](https://www.patreon.com/c/OstinFCT)
 [![Boosty](https://img.shields.io/badge/Boosty-Donate-F15F2C?style=for-the-badge&logo=boosty&logoColor=white)](https://boosty.to/ostinfct)
+
+## Contacts
+
+- GitHub: [OstinUA](https://github.com/OstinUA)
+- Team page: [FCTostin-team](https://github.com/FCTostin-team)
+- Contribution process: see [`CONTRIBUTING.md`](CONTRIBUTING.md).
