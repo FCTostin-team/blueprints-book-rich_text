@@ -1,215 +1,42 @@
-# Contributing Guide
+# <a href="https://github.com/OstinUA" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/OstinUA/Image-storage/main/Factorio/Gear-silhouette-of-the-Factorio-logo.png" width="32" valign="middle" alt="telegram:FCTostin"></a> Contributing Guide <a href="https://github.com/OstinUA"></a>
 
-First off, thanks for investing your time into this project. If you’re here, you’re already helping us keep the blueprint tooling fast, reliable, and actually useful for the Factorio builder crowd.
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-3e80ed?style=for-the-badge&logo=github&logoColor=white)](https://github.com/FCTostin-team)
+[![Open Source](https://img.shields.io/badge/Open_Source-Yes-brightgreen?style=for-the-badge&logo=open-source&logoColor=white)](https://github.com/FCTostin-team)
+[![Views](https://img.shields.io/badge/Profile_Views-%31&#56;%33-blueviolet?style=for-the-badge)](https://github.com/OstinUA)
+[![OstinUA](https://capsule-render.vercel.app/api?type=rect&color=FFA500&height=2&)](https://github.com/OstinUA)
 
-This document is the contributor playbook for `blueprints-book-rich_text`: how to ask questions, report issues, shape enhancements, and ship PRs that get merged without unnecessary back-and-forth.
 
-## Introduction
+Hello! Thank you for your interest in contributing to this project. I am always open to any help, whether it's fixing bugs, adding new features, improving documentation, or just sharing fresh ideas. 
 
-We welcome contributions from everyone: bug hunters, feature builders, docs contributors, and folks doing cleanup/refactors.
+This document is not a strict set of rules, but a simple guide on how we can comfortably and productively work together.
 
-What we value most:
+## ⬢ How You Can Help
 
-- Reproducible bug reports.
-- Small, focused pull requests.
-- Respectful collaboration.
-- Code that preserves existing behavior unless a change is intentional and documented.
+* **Found a bug?** Open an Issue and briefly describe what went wrong and how to reproduce it.
+* **Have a cool idea?** Create an Issue with your proposal. It's always best to discuss an idea first before spending time writing code.
+* **Improving documentation.** Fixing typos, expanding instructions, or translating — absolutely any help is valuable.
+* **Ready to write code?** Feel free to fork the repository and open a Pull Request.
 
-Please also review [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md).
+## ⬢ Pull Request Process
 
-## I Have a Question
+The workflow here is as straightforward as possible:
 
-If your topic is **usage/help/support**, please do **not** open a GitHub Issue for that.
+1. Fork this repository.
+2. Create a new branch for your changes (`git checkout -b feature/my-awesome-idea` or `git checkout -b bugfix/issue-123`).
+3. Make your changes and commit them (`git commit -m "Add new awesome feature"`).
+4. Push the changes to your fork (`git push origin feature/my-awesome-idea`).
+5. Open a Pull Request to this repository.
 
-Issues are reserved for:
+## ⬢ A Few Simple Requests
 
-- Verified bugs
-- Actionable enhancement proposals
-- Concrete engineering tasks
+* Try to stick to the code style already used in the project.
+* Make your commit messages clear so it's easy to understand what changed.
+* If your Pull Request resolves a specific Issue, mention its number in the description (e.g., `Closes #42`).
+* If the logic changes, please update the relevant section in the README.
 
-For usage questions and troubleshooting, use community channels:
+## ⬢ Feedback
 
-- FCTostin Telegram chat
-- FCTostin YouTube comments/community threads
-- Other relevant Factorio/dev chats you use with your team
+I try to review all Issues and Pull Requests as quickly as possible. If I haven't replied in a while, don't hesitate to ping me in the comments.
 
-When asking, include context: what you tried, expected result, and current result.
-
-## Reporting Bugs
-
-High-signal bug reports get fixed faster. Before opening a new issue:
-
-1. Check existing issues to avoid duplicates.
-2. Confirm the bug on the latest repository state.
-3. Prepare a minimal reproduction case.
-
-Use this report structure:
-
-- **Title**: short and specific (`Decode fails on blueprint book with custom icons`)
-- **Environment**:
-  - OS and version
-  - Browser and version
-  - Project commit hash or branch
-  - Any extensions/security settings that may affect clipboard/storage
-- **Steps to Reproduce**:
-  1. Exact input used (or redacted safe sample)
-  2. Exact sequence of actions
-  3. Where behavior diverges
-- **Expected Behavior**: what should happen
-- **Actual Behavior**: what currently happens
-- **Artifacts**: screenshots, console logs, and stack traces
-
-Bug reports without reproducible steps are likely to stall.
-
-## Suggesting Enhancements
-
-Feature requests are welcome, but they need engineering context.
-
-A strong enhancement proposal includes:
-
-- **Problem statement**: what pain point exists today?
-- **Use cases**: real scenarios where this helps.
-- **Proposed behavior**: what should users see/do?
-- **Scope estimate**: small tweak vs architectural change.
-- **Compatibility notes**: does it impact existing decode/encode flows?
-
-If the feature changes UX significantly, include mockups or rough interaction notes.
-
-## Local Development / Setup
-
-### 1. Fork and Clone
-
-```bash
-# Fork on GitHub first, then:
-git clone https://github.com/<your-username>/blueprints-book-rich_text.git
-cd blueprints-book-rich_text
-```
-
-### 2. Create a Working Branch
-
-```bash
-git checkout -b feature/your-change-name
-```
-
-### 3. Install Dependencies
-
-No package manager install is required for base runtime.
-
-The app is static and uses CDN-hosted dependencies.
-
-### 4. Configure Environment
-
-No `.env` file is required by default.
-
-If you introduce configuration, document it in `README.md` and keep defaults safe.
-
-### 5. Run Locally
-
-```bash
-# Option A: direct open
-open index.html   # macOS
-
-# Option B: local static server (recommended)
-python -m http.server 8080
-# Visit http://localhost:8080
-```
-
-## Pull Request Process
-
-### Branch Naming
-
-Use clear branch names:
-
-- `feature/<short-description>`
-- `bugfix/<issue-or-topic>`
-- `docs/<short-description>`
-- `refactor/<short-description>`
-
-### Commit Messages
-
-Use **Conventional Commits**:
-
-- `feat: add blueprint import validation`
-- `fix: handle malformed book metadata gracefully`
-- `docs: rewrite readme getting-started section`
-- `refactor: split icon parsing helpers`
-
-### Sync With Upstream
-
-Before opening a PR, sync your branch with the latest main branch and resolve conflicts locally.
-
-### PR Description Requirements
-
-Your PR description should include:
-
-- Summary of what changed
-- Why the change is needed
-- Linked issue(s), e.g. `Closes #42`
-- Testing evidence (commands + results)
-- Screenshots/GIFs for UI changes
-
-Keep PRs focused. Massive mixed-purpose PRs are hard to review and often delayed.
-
-## Styleguides
-
-### Code Style
-
-- Keep JavaScript clear and modular where possible.
-- Prefer small pure functions for transformation logic.
-- Avoid hidden side effects in encode/decode paths.
-- Preserve existing naming conventions unless there is a strong reason to refactor.
-
-### Linting and Formatting
-
-This repo does not currently enforce dedicated lint/format tooling in CI.
-
-If you introduce ESLint/Prettier or other tools:
-
-- Keep config minimal.
-- Document commands in `README.md`.
-- Avoid style-only churn unrelated to the task.
-
-### Architecture Expectations
-
-- Keep the app static-first and browser-friendly.
-- Avoid introducing backend coupling unless discussed first.
-- Treat decode/encode correctness as a critical path.
-
-## Testing
-
-Any code change should include validation.
-
-Baseline checks:
-
-```bash
-# JavaScript syntax check
-node --check script.js
-
-# Manual smoke test via local server
-python -m http.server 8080
-```
-
-For functional updates, verify at minimum:
-
-- Blueprint decode works
-- JSON edit + re-encode works
-- Blueprint book decode/edit/re-encode works
-- Clipboard/export interactions still function
-
-If your change makes testing easier, adding lightweight test scaffolding is welcome.
-
-## Code Review Process
-
-- Maintainers review incoming pull requests.
-- At least one maintainer approval is expected before merge.
-- Critical-path changes may require additional review/testing passes.
-
-When receiving review feedback:
-
-1. Address comments directly in follow-up commits.
-2. Reply to each thread with what changed.
-3. Keep discussion technical, concise, and respectful.
-
-If you disagree with feedback, explain the tradeoff and propose an alternative instead of silently ignoring the comment.
-
-Thanks again for contributing and helping keep this tool battle-ready.
+The main rule is mutual respect. Welcome, and thank you for your contribution!
+[![OstinUA](https://capsule-render.vercel.app/api?type=rect&color=FFA500&height=2&)](https://github.com/OstinUA)
